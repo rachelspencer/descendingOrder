@@ -11,5 +11,14 @@
 // Input: 123456789 Output: 987654321
 
 function descendingOrder(n){
-    //...
-  }
+    const sortDescending = (a, b) => {
+        return b - a
+    };
+    const sortedArr = String(n).split("").sort(sortDescending).join("");
+
+    const result = parseInt(sortedArr, 10);
+    return result;
+  };
+
+console.log(descendingOrder(42145));
+console.log(typeof 42145)
